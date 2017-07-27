@@ -9289,3 +9289,9 @@ figure:hover img {
   -webkit-filter: grayscale(100%) blur(3px);
   filter: grayscale(100%) blur(3px);
 }
+
+#copyright {
+  margin:20px;
+  text-align: center;
+  font-size: 10px;
+}
