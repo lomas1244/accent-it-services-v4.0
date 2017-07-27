@@ -1,0 +1,301 @@
+@import "vendors/bootstrap/bootstrap.less";
+@import "vendors/fontawesome/font-awesome.less";
+
+@primary: #26a5d3;
+@dark: #fff;
+@light: #f4f4f4;
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+#accent-logo {
+    width: 2.2em;
+    float: left;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.subnav-logo {
+    padding-right: 10px;
+}
+
+.section-divide {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+// Navigation
+
+
+// Section 0
+
+a.left.carousel-control {
+    width: 5%;
+}
+
+a.right.carousel-control {
+    width: 5%;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.carousel-indicators li {
+    border-color: #2e6da4;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.glyphicon-chevron-left:before {
+    content: "\e257";
+}
+
+.glyphicon-chevron-right:before {
+    content: "\e258";
+}
+
+
+#jumbo-style {
+    height: 40em;
+    margin-bottom: 0;
+}
+
+.carousel-background-1 {
+    background-image: url(../img/gallery-header-1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-background-2 {
+    background-image: url(../img/gallery-header-2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-background-3 {
+    background-image: url(../img/gallery-header-3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.gallery-title {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.gallery-title h1 {
+    font-size: 50px;
+}
+
+.ribbon {
+    background-color: #333;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.supporter {
+    width: 10em;
+}
+
+.supporter-apos {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.supporter-rs {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.supporter-scbw {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallery-title h1 {
+    font-weight: 100;
+}
+
+// Portfolio Section
+
+.portfolio-img {
+    width: 100%;
+}
+
+li.col-md-4 figure {
+    overflow: hidden;
+}
+
+.item-divide {
+    padding-bottom: 30px;
+}
+
+
+// Caption Hover Effect
+
+.grid {
+	list-style: none;
+}
+
+.grid li {
+	margin: 0;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.grid figcaption h4 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+/* .grid figcaption span:before {
+	content: 'by '; 
+} */
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+
+// Effect 4 specific
+
+.cs-style-4 li {
+	perspective: 1700px;
+	perspective-origin: 0 50%;
+}
+
+.cs-style-4 figure {
+	transform-style: preserve-3d;
+}
+
+.cs-style-4 figure > div {
+	overflow: hidden;
+}
+
+.cs-style-4 figure img {
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img {
+	transform: translateX(25%);
+}
+
+.cs-style-4 figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	backface-visibility: hidden;
+	transform-origin: 0 0;
+	transform: rotateY(-90deg);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption {
+	opacity: 1;
+	transform: rotateY(0deg);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+// Load More Button
+
+li.item-divide {
+    display:none;
+}
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.totop a {
+    display: none;
+}
+
+#one li.item-divide {
+    display: block;
+}
+
+#two li.item-divide {
+    display: block;
+}
+
+// Blur + Greyscale
+
+figure.img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+// Services Hover
+
+
+
+
+
+
+
+
