@@ -9317,3 +9317,6 @@ figure.effect-goliath:hover p {
 .card-block {
   text-align: center;
 }
+.card-text {
+  font-weight: 100;
+}
