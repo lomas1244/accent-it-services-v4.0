@@ -153,112 +153,16 @@ a.right.carousel-control {
     width: 100%;
 }
 
-li.col-md-4 figure {
+figure {
     overflow: hidden;
 }
 
-.item-divide {
-    padding-bottom: 30px;
-}
-
-
-// Caption Hover Effect
-
-.grid {
-	list-style: none;
-}
-
-.grid li {
-	margin: 0;
-	text-align: left;
-	position: relative;
-}
-
-.grid figure {
-	margin: 0;
-	position: relative;
-}
-
-.grid figure img {
-	max-width: 100%;
-	display: block;
-	position: relative;
-}
-
-.grid figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
-}
-
-.grid figcaption h4 {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-
-/* .grid figcaption span:before {
-	content: 'by '; 
-} */
-
-@media screen and (max-width: 31.5em) {
-	.grid {
-		padding: 10px 10px 100px 10px;
-	}
-	.grid li {
-		width: 100%;
-		min-width: 300px;
-	}
-}
-
-// Effect 4 specific
-
-.cs-style-4 li {
-	perspective: 1700px;
-	perspective-origin: 0 50%;
-}
-
-.cs-style-4 figure {
-	transform-style: preserve-3d;
-}
-
-.cs-style-4 figure > div {
-	overflow: hidden;
-}
-
-.cs-style-4 figure img {
-	transition: transform 0.4s;
-}
-
-.no-touch .cs-style-4 figure:hover img,
-.cs-style-4 figure.cs-hover img {
-	transform: translateX(25%);
-}
-
-.cs-style-4 figcaption {
-	height: 100%;
-	width: 50%;
-	opacity: 0;
-	backface-visibility: hidden;
-	transform-origin: 0 0;
-	transform: rotateY(-90deg);
-	transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-.no-touch .cs-style-4 figure:hover figcaption,
-.cs-style-4 figure.cs-hover figcaption {
-	opacity: 1;
-	transform: rotateY(0deg);
-	transition: transform 0.4s, opacity 0.1s;
-}
 
 // Load More Button
 
-li.item-divide {
+.goliath-container {
     display:none;
+    padding: 0;
 }
 .totop {
     position: fixed;
@@ -277,6 +181,10 @@ li.item-divide {
     display: block;
 }
 
+#loadMore {
+    margin-top: 1em;
+}
+
 // Blur + Greyscale
 
 figure img.portfolio-img {
@@ -292,53 +200,51 @@ figure:hover img.portfolio-img {
 
 // Goliath Hover
 
-.grid-goliath {
+.grid {
 	position: relative;
 	clear: both;
-	margin: 0 auto;
-	padding: 1em 0 4em;
 	list-style: none;
+	text-align: center;
+}
+
+.grid .goliath-container {
+    padding: 1em 1em 0 0;
 }
 
 /* Common style */
-
-.grid-goliath figure {
+.grid .goliath-container a figure {
 	position: relative;
-	float: left;
 	overflow: hidden;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
-	width: 48%;
+	width: 100%;
 	height: auto;
 	background: #3085a3;
+	text-align: center;
 	cursor: pointer;
 }
 
-.grid-goliath figure img {
+.grid .goliath-container figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
 }
 
-.grid-goliath figure figcaption {
-	padding: 2em;
+.grid .goliath-container figure figcaption {
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 54%, rgba(0,0,0,0.73) 100%);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 54%, rgba(0, 0, 0, 0.73) 100%);
 }
 
-.grid-goliath figure figcaption::before,
-.grid-goliath figure figcaption::after {
+.grid .goliath-container figure figcaption::before,
+.grid .goliath-container figure figcaption::after {
 	pointer-events: none;
 }
 
-.grid-goliath figure figcaption,
-.grid-goliath figure figcaption > a {
+.grid .goliath-container figure figcaption,
+.grid .goliath-container figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -346,12 +252,16 @@ figure:hover img.portfolio-img {
 	height: 100%;
 }
 
+/*-----------------*/
+/***** Goliath *****/
+/*-----------------*/
+
 figure.effect-goliath {
 	background: #df4e4e;
 }
 
 figure.effect-goliath img,
-figure.effect-goliath h2 {
+figure.effect-goliath h3 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -361,12 +271,19 @@ figure.effect-goliath img {
 	backface-visibility: hidden;
 }
 
-figure.effect-goliath h2,
+figure.effect-goliath h3,
 figure.effect-goliath p {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-    padding: 0px 20px 0px 20px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+figure.effect-goliath span {
+    font-weight: bold;
+    font-size: 90%;
+    color: hotpink;
 }
 
 figure.effect-goliath p {
@@ -384,7 +301,7 @@ figure.effect-goliath:hover img {
 	transform: translate3d(0,-80px,0);
 }
 
-figure.effect-goliath:hover h2 {
+figure.effect-goliath:hover h3 {
 	-webkit-transform: translate3d(0,-100px,0);
 	transform: translate3d(0,-100px,0);
 }
@@ -395,7 +312,12 @@ figure.effect-goliath:hover p {
 	transform: translate3d(0,0,0);
 }
 
+// services cards 
 
+.card img {
+    width: 100%;
+}
 
-
-
+.card-block {
+    text-align: center;
+}
