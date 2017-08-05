@@ -9266,6 +9266,7 @@ figure:hover img.portfolio-img {
 /*-----------------*/
 figure.effect-goliath {
   background: #df4e4e;
+  max-height: 20em;
 }
 figure.effect-goliath img,
 figure.effect-goliath h3 {
