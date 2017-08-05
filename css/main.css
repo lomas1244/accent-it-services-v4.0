@@ -9321,8 +9321,13 @@ figure.effect-goliath:hover p {
 .card-text {
   font-weight: 100;
 }
-#copyright {
-  margin:20px;
-  text-align: center;
-  font-size: 10px;
-} 
+.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #ffffff url('https://s3.eu-west-2.amazonaws.com/accent-website/826.gif') no-repeat center center;
+}
