@@ -9315,11 +9315,56 @@ figure.effect-goliath:hover p {
 .card img {
   width: 100%;
 }
-.card-block {
-  text-align: center;
-}
 .card-text {
   font-weight: 100;
+  margin: 0;
+}
+.carousel-cell {
+  margin-left: 2em;
+}
+.card-block {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 10px 0px 10px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-img-top {
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.number-span {
+  font-weight: 900;
+}
+.customer-span {
+  text-align: right;
+  font-size: 12px;
+}
+ol.flickity-page-dots {
+  bottom: -40px;
+}
+li.dot {
+  border: 1px solid #2e6da4;
+  background-color: #fff !important;
+}
+li.dot.is-selected {
+  width: 12px;
+  height: 12px;
+}
+#review h1 {
+  font-weight: 100;
+  text-align: center;
+}
+#review h1 span {
+  font-weight: 900;
+  color: hotpink;
+}
+#comment {
+  padding-top: 20px;
 }
 .js div#preloader {
   position: fixed;
@@ -9330,4 +9375,33 @@ figure.effect-goliath:hover p {
   height: 100%;
   overflow: visible;
   background: #ffffff url('https://s3.eu-west-2.amazonaws.com/accent-website/826.gif') no-repeat center center;
+}
+#footer-subtext {
+  background: #333;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+#copyright {
+  font-size: 12px;
+  text-align: left;
+}
+#legal {
+  font-size: 12px;
+  position: relative;
+  text-align: right;
+}
+#container-topper {
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+}
+::selection {
+  background-color: hotpink;
+  /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background-color: hotpink;
+  /* Gecko Browsers */
+  color: #fff;
 }
