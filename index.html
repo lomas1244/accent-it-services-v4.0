@@ -66,7 +66,7 @@
                         </ul>
                     </li>
                 </ul>
-                <div id="navbar" class="collapse navbar-collapse navbar-right">
+             <!--  <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Accent</a></li>
                         <li><a href="#about">Business IT</a></li>
@@ -74,7 +74,7 @@
                         <li><a href="#contact">Design</a></li>
                         <li><a href="#contact">Portfolio</a></li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div><!--/.nav-collapse --> 
             </div>
         </nav>
 
@@ -87,6 +87,7 @@
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -114,7 +115,23 @@
                                         <div class="gallery-title">
                                             <h1>App Development</h1>
                                             <p>Keeping you, your business, and your customers connected within one fluid interface: trialled, tested, and loved, by the people who make your customer experience memorable.</p>
-                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Learn more</button>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#app-dev">Learn more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div id="jumbo-style" class="jumbotron carousel-background-4">
+                            <div class="container carousel-text-1">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="gallery-title note-gallery-item">
+                                            <h1>note.<span style="font-size: 0.5em;">&trade;</span> All of your important dates.</h1>
+                                            <p>Smart accounting application for mobile and web. Keep track of your taxes, and be reminded of those evasive deadlines which could leave you high and dry. Based in an easily-deployable mobile-app and web-application.</p>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#note-dev">Learn more</button>
                                         </div>
                                     </div>
                                 </div>
@@ -129,9 +146,7 @@
                                         <div class="gallery-title">
                                             <h1>APOS Complete Restaurant Management</h1>
                                             <p>Keeping you, your business, and your customers connected within one fluid interface: trialled, tested, and loved, by the people who make your customer experience memorable.</p>
-                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                                Launch demo modal
-                                            </button>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#apos-dev">Learn more</button>
                                         </div>
                                     </div>
                                 </div>
@@ -182,12 +197,54 @@
 
         <!-- learn more modals -->
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="app-dev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header-dev">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h2 style="text-align: right; margin-right: 1em;" class="modal-title" id="myModalLabel">App Development</h2>
+                        <p style="text-align: right; margin-right: 2em;">By Accent I.T. Services</p>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id neque tellus. Vivamus at porttitor eros. Donec tempor orci id fermentum pulvinar. Vestibulum condimentum, erat a iaculis egestas, tellus purus condimentum lectus, dignissim sodales metus orci nec leo. Vestibulum non fermentum enim, at dignissim ex. Maecenas elit mauris, tempor eu placerat eget, varius at dui. Praesent leo massa, semper in lorem non, porta pellentesque libero. Fusce facilisis pulvinar bibendum. Maecenas scelerisque congue mattis. Proin dui elit, auctor sit amet ultrices ut, gravida id libero. Aliquam vestibulum facilisis dui, id imperdiet nunc ullamcorper id. Morbi non leo quis est maximus condimentum ut ac ex.
+                        <br>
+                        Suspendisse potenti. Quisque convallis auctor feugiat. Praesent sed sollicitudin felis, eu auctor tortor. Maecenas a ante congue, consequat ex vel, sagittis nunc. Praesent rhoncus velit tincidunt imperdiet ultricies. Fusce interdum, quam sed fermentum fringilla, erat orci tempor augue, eu viverra quam ante vel turpis. Nulla ut enim turpis. Vestibulum sollicitudin nisl vitae dui commodo, nec convallis risus consequat. Pellentesque malesuada fermentum sollicitudin. Donec et vehicula erat, nec auctor velit. Vivamus eget ipsum odio.
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="apos-dev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header-dev">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 style="text-align: right; margin-right: 1em;" class="modal-title" id="myModalLabel">App Development</h2>
+                        <p style="text-align: right; margin-right: 2em;">By Accent I.T. Services</p>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id neque tellus. Vivamus at porttitor eros. Donec tempor orci id fermentum pulvinar. Vestibulum condimentum, erat a iaculis egestas, tellus purus condimentum lectus, dignissim sodales metus orci nec leo. Vestibulum non fermentum enim, at dignissim ex. Maecenas elit mauris, tempor eu placerat eget, varius at dui. Praesent leo massa, semper in lorem non, porta pellentesque libero. Fusce facilisis pulvinar bibendum. Maecenas scelerisque congue mattis. Proin dui elit, auctor sit amet ultrices ut, gravida id libero. Aliquam vestibulum facilisis dui, id imperdiet nunc ullamcorper id. Morbi non leo quis est maximus condimentum ut ac ex.
+                        <br>
+                        Suspendisse potenti. Quisque convallis auctor feugiat. Praesent sed sollicitudin felis, eu auctor tortor. Maecenas a ante congue, consequat ex vel, sagittis nunc. Praesent rhoncus velit tincidunt imperdiet ultricies. Fusce interdum, quam sed fermentum fringilla, erat orci tempor augue, eu viverra quam ante vel turpis. Nulla ut enim turpis. Vestibulum sollicitudin nisl vitae dui commodo, nec convallis risus consequat. Pellentesque malesuada fermentum sollicitudin. Donec et vehicula erat, nec auctor velit. Vivamus eget ipsum odio.
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="note-dev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header-note">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 style="text-align: right; margin-right: 1em;" class="modal-title" id="myModalLabel">note. By Accent</h2>
                         <p style="text-align: right; margin-right: 2em;">By Accent I.T. Services</p>
                     </div>
                     <div class="modal-body">

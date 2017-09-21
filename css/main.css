@@ -9149,6 +9149,11 @@ a.right.carousel-control {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.carousel-background-4 {
+  background-image: url(../img/gallery-header-4.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .gallery-title {
   margin-left: 20px;
   padding-top: 20px;
@@ -9178,6 +9183,9 @@ a.right.carousel-control {
 }
 .gallery-title h1 {
   font-weight: 100;
+}
+.note-gallery-item {
+  color: #ffffff;
 }
 .portfolio-img {
   width: 100%;
@@ -9417,6 +9425,13 @@ li.dot.is-selected {
 }
 .modal-header-dev {
   background-image: url(../img/app-dev-header.gif);
+  background-size: cover;
+  height: 30em;
+  padding: 2em;
+  color: darkslategrey;
+}
+.modal-header-note {
+  background-image: url(../img/PF-Button-14.gif);
   background-size: cover;
   height: 30em;
   padding: 2em;
