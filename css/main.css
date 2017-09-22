@@ -9166,6 +9166,11 @@ a.right.carousel-control {
   padding-top: 50px;
   padding-bottom: 10px;
 }
+.mobile-ribbon {
+  background-color: #333;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 .supporter {
   width: 10em;
 }
@@ -9436,4 +9441,103 @@ li.dot.is-selected {
   height: 30em;
   padding: 2em;
   color: darkslategrey;
+}
+.modal-header-marketing {
+  background-image: url(../img/note/note-gallery-rework.gif);
+  background-size: cover;
+  height: 30em;
+  padding: 2em;
+  color: darkslategrey;
+}
+.note-modal-img {
+  width: 100%;
+  border: 1px solid #EA7B38;
+  border-radius: 1em;
+}
+.note-modal-text p {
+  font-size: 12px;
+}
+.note-zoom-cursor {
+  cursor: zoom-in;
+  padding-right: 0;
+  margin-right: 15px;
+}
+.zoom:after {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/icon.png);
+  background-image: url(../img/icon.png);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+.modal-row h4 {
+  margin: 0 15px 15px 15px;
+  border-bottom: 1px solid rgba(64, 64, 64, 0.2);
+  padding-bottom: 5px;
+}
+@media (max-width: 500px) {
+  #large-carousel {
+    display: none;
+  }
+  #mobile-carousel {
+    text-align: center;
+    height: 650px;
+  }
+  #jumbo-style {
+    height: 650px;
+  }
+  #mobile-carousel h1 {
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  a.dropdown-toggle {
+    float: right;
+  }
+  #mobile-brands {
+    display: block !important;
+  }
+  #full-brands {
+    display: none;
+  }
+  .ribbon {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  #mobile-carousel {
+    display: none;
+  }
+}
+.mobile-carousel-background-1 {
+  background-image: url(../img/mobile-gallery-header-1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-2 {
+  background-image: url(../img/mobile-gallery-header-4.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-3 {
+  background-image: url(../img/mobile-gallery-header-2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-4 {
+  background-image: url(../img/mobile-gallery-header-3.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
