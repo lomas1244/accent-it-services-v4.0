@@ -9488,10 +9488,10 @@ li.dot.is-selected {
   #tablet-carousel {
     display: block !important;
     text-align: center;
-    height: 830px;
+    height: 800px;
   }
   #jumbo-style {
-    height: 830px;
+    height: 800px;
   }
 }
 @media (max-width: 500px) {
