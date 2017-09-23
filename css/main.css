@@ -9173,6 +9173,7 @@ a.right.carousel-control {
 }
 .supporter {
   width: 100%;
+  cursor: pointer;
 }
 .gallery-title h1 {
   font-weight: 100;
