@@ -9475,6 +9475,25 @@ li.dot.is-selected {
   border-bottom: 1px solid rgba(64, 64, 64, 0.2);
   padding-bottom: 5px;
 }
+@media (max-width: 770px) {
+  .mobile-ribbon {
+    display: none;
+  }
+  .ribbon {
+    padding-bottom: 50px;
+  }
+  #large-carousel {
+    display: none;
+  }
+  #tablet-carousel {
+    display: block !important;
+    text-align: center;
+    height: 830px;
+  }
+  #jumbo-style {
+    height: 830px;
+  }
+}
 @media (max-width: 500px) {
   #large-carousel {
     display: none;
@@ -9518,6 +9537,26 @@ li.dot.is-selected {
 }
 .mobile-carousel-background-1 {
   background-image: url(../img/mobile-gallery-header-1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-2 {
+  background-image: url(../img/mobile-gallery-header-4.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-3 {
+  background-image: url(../img/mobile-gallery-header-2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-4 {
+  background-image: url(../img/mobile-gallery-header-3.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-carousel-background-1 {
+  background-image: url(../img/tablet-gallery-header-1.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
