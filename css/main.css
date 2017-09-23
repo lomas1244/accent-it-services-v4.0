@@ -9561,17 +9561,17 @@ li.dot.is-selected {
   background-size: cover;
 }
 .mobile-carousel-background-2 {
-  background-image: url(../img/mobile-gallery-header-4.gif);
+  background-image: url(../img/tablet-gallery-header-4.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .mobile-carousel-background-3 {
-  background-image: url(../img/mobile-gallery-header-2.gif);
+  background-image: url(../img/tablet-gallery-header-3.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .mobile-carousel-background-4 {
-  background-image: url(../img/mobile-gallery-header-3.gif);
+  background-image: url(../img/tablet-gallery-header-2.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
