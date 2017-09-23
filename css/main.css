@@ -9493,6 +9493,15 @@ li.dot.is-selected {
   #jumbo-style {
     height: 770px;
   }
+  #tablet-carousel h1 {
+    margin-bottom: 0;
+  }
+  ul.grid {
+    padding: 0;
+  }
+  .goliath-container {
+    padding: 15px 15px 15px 15px !important;
+  }
 }
 @media (max-width: 500px) {
   #large-carousel {
