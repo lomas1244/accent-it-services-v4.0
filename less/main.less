@@ -174,7 +174,7 @@ figure {
 .totop {
     position: fixed;
     bottom: 10px;
-    right: 20px;
+    left: 20px;
 }
 .totop a {
     display: none;
@@ -519,7 +519,7 @@ li.dot.is-selected {
 
 // Tablet Media Query
 
-@media (max-width: 770px) {
+@media (min-width: 501px) and (max-width: 770px) {
     .mobile-ribbon {
         display: none;
     }
@@ -530,6 +530,7 @@ li.dot.is-selected {
         display: none;
     }
     #tablet-carousel {
+        display: block !important;
         text-align: center;
         height: 770px;
     }
@@ -647,5 +648,22 @@ li.dot.is-selected {
     background-image: url(../img/tablet-gallery-header-2.gif);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+// Terms and Conditions 
+
+#terms-conditions {
+    padding-top: 80px;
+}
+
+#cookies-privacy {
+    padding-top: 80px;
+}
+
+#cookies-privacy h3 {
+    font-weight: bold;
+}
+#cookies-privacy h4 {
+    font-weight: bold;
 }
 
