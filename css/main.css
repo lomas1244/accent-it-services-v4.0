@@ -9197,8 +9197,8 @@ figure {
 }
 .totop {
   position: fixed;
-  bottom: 5px;
-  left: 20px;
+  bottom: 40px;
+  right: 15px;
 }
 .totop a {
   display: none;
