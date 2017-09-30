@@ -9600,3 +9600,8 @@ li.dot.is-selected {
 #cookies-privacy h4 {
   font-weight: bold;
 }
+.login-header {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+}
